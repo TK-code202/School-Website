@@ -69,6 +69,7 @@ body {
     margin-top: -5%;
 }
 
+
 .active {
     font-weight: 900;
 }
@@ -378,6 +379,7 @@ body {
 .offered_subjects li {
     background-color: darkseagreen;
     margin-bottom: 1%;
+    list-style-type: none;
 }
 .school_subjects {
     margin-left: 5%;
@@ -404,6 +406,48 @@ body {
     margin-left: 40%;
     margin-top: 12%;
 }
+
+.fancy_button {
+   margin-left: 40%;
+   margin-top: 12%;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.fancy_button::after {
+  content: "";
+  background-color: #4cfff0;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
 
 .space_505 {
     margin-top: 12%;
@@ -436,6 +480,13 @@ body {
     
 }
 
+.curriculum {
+    margin-top: 18%;
+}
+
+.curriculum p {
+    margin-left: 15%;
+}
 
 .teaching {
     margin-top: 22%;
@@ -458,6 +509,10 @@ body {
     border-style: none;
     border-radius: 0px;
    
+}
+
+.adjust {
+    height: 0%;
 }
 
 .teaching img {
@@ -515,9 +570,9 @@ body {
 
 /* enrollment.html */
 
-.background505 {
+.background505 img {
     width: 100%;
-    /* height: 20%; */
+    height: 400%;
     /* object-fit: cover;
     object-position: bottom; */
     position: absolute;
@@ -530,6 +585,12 @@ body {
     width: 65%;
     padding: 10px;
     margin-left: 5%;
+}
+
+.response_card {
+    margin-top: 48%;
+    margin-left: 8%;
+    display: none;
 }
 
 .form_enroll-button {
@@ -571,7 +632,7 @@ body {
 }
 
 .send_message input, .send_message textarea {
-    background-color: gainsboro;
+    background-color: rgb(197, 235, 245);
     border: none;
     outline: none;
 }
@@ -612,6 +673,19 @@ body {
     height: 80%;
     margin-left: 13%;
 }
+
+.principal_info {
+    display: flex;
+    gap: 5%;
+    margin-left: 6%;
+    margin-top: 15%;
+}
+
+.board_members {
+    margin-top: 16%;
+}
+
+
 
 /* profile page */
 .profile {
@@ -664,10 +738,74 @@ body {
     top: 0;
 }
 
+/* boarding.html */
+.boarding {
+    margin-top: 22%;
+    gap: 0%;
+}
+
+.hostel_masters {
+    display: flex;
+    gap: 5%;
+    margin-left: 7%;
+}
+
+.hostel_masters img {
+    height: 70%;
+    width: 90%;
+}
+
+.boarding_img01 img {
+    margin-top: 10%;
+    margin-left: 18%;
+}
+
+.hostel-info {
+    margin-top: 12%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hostel_btn {
+    margin-top: 8%;
+    margin-left: 45%;
+}
+
+/* admission.html */
+.admission, .tution {
+    margin-top: 22%;
+    margin-left: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* gallery.html */
+.gallery {
+    margin-top: 30%;
+    margin-left: 5%;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 4%;
+    
+}
+
+.gallery_img {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.gallery_img :hover {
+    /* transform: scale(1.5); */
+    width: 106%;
+}
+
+
+
 @media (max-width: 768px ) {
 
     .fa-bars {
-        margin-top: -9.5%;
+        margin-top: -7.5%;
         margin-left: 78%;
         visibility: visible;
         cursor: pointer;
@@ -701,22 +839,29 @@ body {
         position: fixed;
         z-index: 999;
         box-shadow: 0px 20px 49px rgba(0,0,0,0.67);
-        width: 75%;
+        width: 67%;
         top: 4%;
-        padding: 10px;
+        /* padding: px; */
         padding-right: 0px;
-        left: 3%;
+        left: 5%;
         right: 3%;
         gap: 2%;
     }
 
-    .nav img {
-        width: 10%;
+    .title {
+        margin-top: 35%;
     }
 
+    .nav img {
+        width: 10%;
+        margin-top: -2%;
+    }
+
+
+
     .background img {
-        width: 83.5%;
-        height: 100%;
+        width: 100.5%;
+        height: 180%;
         /* object-fit: cover;
         object-position: bottom; */
         position: absolute;
@@ -728,93 +873,99 @@ body {
         margin-top: 50%;
     }
 
-.main-text {
-    color: white;
-    font-size: 3.5rem;
-    margin-left: 17%;
-    font-weight: 400;
-}
-
+    .main-text {
+        color: rgb(0, 140, 255);
+        font-size: 3.5rem;
+        margin-left: 8%;
+        font-weight: 700;
+    }
+    
     .home-view {
-        margin-left: 0%;
+        margin-left: 3%;
         display: block;
     }
-
+    
     .slide-view  {
         margin-top: 4%;
         background-color: black;
-        width: 87.5%;
         padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
+        width: 200%;
     }
-
+    
     .home-view :hover {
         background-color: rgb(49, 49, 49);
     }
-
-    .fa-globe, .fa-book, .fa-user, .fa-pencil-square-o, .fa-list-ol, .fa-group, .fa-graduation-cap {
+    
+    .fa-globe, .fa-book, .fa-user, .fa-pencil-square-o, .fa-list-ol, .fa-group, .fa-graduation-cap, .fa-user-plus, .fa-hotel, .fa-building, .fa-trophy {
         color: rgb(82, 155, 250);
     }
-
-
+    
+    
     .courses {
-        margin-top: 27%;
+        margin-top: 60%;
+        margin-bottom: 10%;
+        display: block;
+        margin-left: 1%;
+        /* margin-right: 26%; */
+    }
+    
+    .pop-course {
+        display: block;
+        margin-left: 2%;
         margin-bottom: 10%;
         
+    
     }
-
-    .pop-course {
-        margin-left: 0%;
-        margin-right: 55%;
-        display: block;
+    
+    .pop-course :hover {
+        margin-top: 0%
     }
-
-    /* .pop-course :hover {
-        margin-top: 0.2%;
-    } */
-
+    
     .pop-course img {
-        margin-top: 68%;
-        width: 205%;
+        display: block;
+        margin-top: 30%;
+        width: 100%;
     }
-
+    
     .pop-course-info {
         margin-top: 0;
-        width: 205%;
+        width: 100%;
         height: 40%;
         padding:15px;
         background: lavender;
         
     }
-
+    
     .price-tag {
         background-color: rgb(8, 180, 180);
         padding: 3px;
         padding-left: 11px;
-        width: 205%;
+        width: 100%;
         color: aliceblue;
     }
-
+    
     .wide-screen {
         margin-top: 50%;
-        display: flex;
+        display: block;
         gap: 0%;
     }
-
+    
     .large-text {
         font-size: 2.8rem;
         width: 90%;
     }
-
+    
     .register {
         background-color: cornflowerblue;
         padding: 30px;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 40%;
+        margin-left: 2%;
+        width: 100%;
     }
-
+    
     .register-button {
         margin-top: 10%;
         padding: 15px;
@@ -824,15 +975,14 @@ body {
         color: white;
         border-style: none;
         border-radius: 0px;
-    
+       
     }
-
-
-
-
+    
     .background101 img {
-        width: 46%;
-        height: 87.6%;
+        margin-left: 8%;
+        margin-right: 1%;
+        width: 80%;
+        height: 62.6%;
         object-fit: cover;
         object-position: bottom;
         position: absolute;
@@ -840,44 +990,580 @@ body {
         opacity: 0.6;
         
     }
-
+    
     .search-course form h2 {
         width: 120%;
     }
     .search-course form {
-        margin-top: 50%;
-        margin-left: 2%;
+        margin-top: 30%;
+        margin-left: 20%;
     }
-
+    
     .course-input {
         padding: 20px;
         padding-top: 24px;
         padding-bottom: 24px;
-        width: 90%;
+        width: 70%;
         margin-top: 8%;
         margin-bottom: 2%;
         border-radius: 0px;
         
     }
-
+    
     .search-course-button {
         padding: 10px;
         padding-left: 25px;
         padding-right: 25px;
-        width: 90%;
+        width: 70%;
         margin-top: 10%;
     }
+    
+    .school-info {
+        margin-top: 40%;
+        margin-bottom: 8%;
+        display: block;
+        gap: 0%;
+        margin-left: 5%;
+    }
+    
+    .info_side-board img {
+        width: 80%;
+        height: 59%;
+        object-fit: cover;
+        object-position: bottom;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+        
+    }
+    
+    .mini-nav-bar {
+        display: flex;
+        gap: 3%;
+    }
+    
+    .info-board {
+        background-color: cyan;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .stats-board {
+        margin-top: 60%;
+    }
 
+    .stats-board .row {
+        display: block;
+    }
+    
+    .background808 img {
+        width: 100.2%;
+        height: 160%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        filter: brightness(20%);
+    
+    }
+    
+    .stats {
+        margin-top: 18%;
+        margin-left: 35%;
+    }
+    
+    /* .stats-board h1 {
+        margin-left: 80%;
+    } */
+    
     .services {
-        margin-top: 20%;
+        margin-top: 70%;
+        
+    }
+    .services .row {
+        display: block;
+        margin-right: 20%;
     }
 
     .service {
-        margin-left: -9%;
-       margin-right: 9%;
         padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+    
+    /* .footer {
+        margin-top: 28%;
+        right: 0;
+        left: 0;
+        background-color: black;
+        padding: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 104.8%;
+    }
+    
+    .input-group {
+        width: 65%;
+        margin-left: 17%;
+    
+    }
+    
+    .footer-box {
+        margin-top: 18%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-top-style:solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        border-color: white;
+    }
+    
+    .footer-box img {
+        width: 22%;
+        border-radius: 200px;
+    }
+    
+    .footer-box li {
+        list-style-type: none;
+    }
+    
+    .footer-box h4 {
+        margin-left: 16.2%;
+    }
+    
+    .footer-box a {
+        color: grey;
+    }
+    
+    .copyright-box {
+        margin-top: 5%;
+        font-size: larger;
+        display: flex;
+        border-top-style:none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        border-color: white;
+    }
+    
+    .s-media {
+        margin-left: 65%;
+    } */
+    
+    /* courses.html */
+    .background03 img {
+        width: 100%;
+        height: 80%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    .display-text {
+        width: 45%;
+        padding: 20px;
+        font-size: 3.6rem;
+        margin-left: 28%;
+    }
+    .academics {
+        margin-top: 60%;
+    }
+    .acad-info {
+        margin-left: 6%;
+    }
+    
+    .acad-info button {
+        margin-top: 3%;
+        margin-left: 34%;
+    }
+    
+    .acad_info {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkslateblue;
+    }
+    
+    .acad_img01 {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    
+    .offered_subjects {
+        margin-top: 11%;
+    }
+    .offered_subjects li {
+        background-color: darkseagreen;
+        margin-bottom: 1%;
+    }
+    .school_subjects {
+        margin-left: 5%;
+        background-color: azure;
+        padding: 10px;
+    }
+    
+    .facilities {
+        margin-top: 18%;
+    }
+    
+    .library {
+        margin-top: 18%;
+    }
+    
+    .library p {
+        margin-left: 18%;
+        width: 65%;
+        margin-top: 2%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .apply_button {
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+    
+    .space_505 {
+        margin-top: 12%;
+    }
+    
+    /* teachers.html */
+    .teachers {
+        margin-top: 57%;
+    }
+    
+    .course-teachers {
+        margin-left: 2%;
+    }
+    
+    .course-teachers :hover {
+       opacity: 0.7;
+    }
+    
+    .course-teachers img {
+        margin-top: 12%;
+        width: 110%;
+    }
+    
+    .course-teachers-info {
+        margin-top: 0;
+        width: 110%;
+        height: 40%;
+        padding:15px;
+        background: lavender;
+        
+    }
+    
+    .curriculum {
+        margin-top: 18%;
+    }
+    
+    .curriculum p {
+        margin-left: 15%;
+    }
+    
+    .teaching {
+        margin-top: 22%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6%;
+        margin-left: 4%;
+        margin-bottom: 0%;
+    }
+    
+    
+    .teaching_more {
+        margin-top: 10%;
+        padding: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: darkcyan;
+        color: white;
+        border-style: none;
+        border-radius: 0px;
+       
+    }
+    
+    .teaching img {
+        width: 50%;
+        height: 40%;
+    }
+    
+    /* login.html */
+    
+    .background707 img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    .loginCard {
+        margin-top: 25%;
+        margin-left: 27%;
+        background-color: white;
+        padding: 20px;
+        max-width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .login_input {
+        height: 20%;
+        margin-bottom: 6%;
+        border-radius: 0px;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        color: #c8cad1;
+        border-color: #c8cad1;
+        font-size: 0.9rem;
+    }
+    
+    .login_button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0px;
+        margin-top: 8%;
+    }
+    
+    .login_info {
+        margin-top: 8%;
+        color: gray;
+    }
+    
+    /* enrollment.html */
+    
+    .background505 img {
+        width: 100%;
+        height: 360%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    #enrollmentCard {
+        margin-top: 22%;
+        width: 65%;
+        padding: 10px;
+        margin-left: 5%;
+    }
+    
+    .form_enroll-button {
+        margin-top: 10%;
+        padding: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: blue;
+        color: white;
+        border-style: none;
+        border-radius: 0px;
+    }
+    
+    /* contact.html */
+    .message {
+        margin-left: 3%;
+    }
+    
+    .join_courses {
+        margin-left: 4%;
+    }
+    
+    .join_courses p {
+        color: #7a7a80;
+        font-size: 1.1rem;
+        margin-bottom: 10%;
+    }
+    
+    .join_courses li {
+        list-style-type: none;
+    }
+    
+    .join_courses .fa {
+        color: rgb(76, 148, 241);
+    }
+    
+    .send_message {
+        width:100%;
+    }
+    
+    .send_message input, .send_message textarea {
+        background-color: rgb(249, 255, 249);
+        border: none;
+        outline: none;
+    }
+    
+    .send_message_button {
+        margin-top: 2%;
+        padding: 10px;
+        width: 100%;
+    
+    }
+    /* aboutUs.html */
+    .about_us {
+        margin-top: 40%;
+        margin-left: 8%;
+        display: block;
+    
+    }
+    
+    .adjustNav {
+        width: 90%;
+    }
+
+    .about_info {
+        margin-top: 8%;
+        padding: 15px;
+        margin-left: 5%;
+        background-color: lightseagreen;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 95%;
+    }
+    
+    .about_info p {
+        width: 90%;
+        margin-left: 2%;
+    }
+    
+    .about_us p {
+        width: 95%;
+    }
+    
+    .about-profile img {
+        border-radius: 100%;
+        width: 80%;
+        height: 40%;
+        margin-left: 6%;
+    }
+    
+    .principal_info {
+        display: flex;
+        gap: 5%;
+        margin-left: 6%;
+        margin-top: 15%;
+    }
+    
+    .board_members {
+        margin-top: 16%;
+        display: block;
+    }
+    
+    
+    
+    /* profile page */
+    .profile {
+        margin-top:40%;
+        margin-left: 4%;
+    }
+    
+    .profile-card img {
+        border-radius: 200px;
+    }
+    
+    .profile-card {
+        background-color: rgb(255, 255, 255);
+        padding: 8px;
+        padding-left: 200px;
+        border-radius: 5px;
+        /* width: 20%; */
+    }
+    
+    .profile-card h4 {
+        margin-left: 10%;
+    }
+    
+    .profile_input {
+        margin-bottom: 2%;
+        border-radius: 3px;
+    }
+    
+    .profile_info {
+        background-color: rgb(144, 168, 247);
+        border-radius: 5px;
+        padding: 5px;
+        
+    }
+    
+    /* signUp Page */
+    .formTwo {
+        margin-top: 10%;
+        margin-left: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .background909 img {
+        width: 100%;
+        height: 220%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    /* boarding.html */
+    .boarding {
+        margin-top: 22%;
+        gap: 0%;
+    }
+    
+    .hostel_masters {
+        display: block;
+        gap: 5%;
+        margin-left: 7%;
+    }
+    
+    .hostel_masters img {
+        height: 70%;
+        width: 90%;
+    }
+    
+    .boarding_img01 img {
+        margin-top: 10%;
+        margin-left: 7%;
+    }
+    
+    .hostel-info {
+        margin-top: 12%;
+        margin-left: 4%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .hostel_btn {
+        margin-top: 8%;
+        margin-left: 40%;
+    }
+    
+    /* admission.html */
+    .admission, .tution {
+        margin-top: 22%;
+        margin-left: 2%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    /* gallery.html */
+    .gallery {
+        margin-top: 30%;
+        margin-left: 5%;
+    }
+    
+    .gallery img {
+        width: 100%;
+        margin-bottom: 4%;
     }
 
     .footer {
@@ -888,7 +1574,7 @@ body {
         padding: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 90%;
+        width: 105.3%;
     }
 
     .input-group {
@@ -911,7 +1597,7 @@ body {
     }
 
     .footer-box img {
-        width: 28%;
+        width: 34%;
         border-radius: 200px;
     }
 
@@ -947,18 +1633,18 @@ body {
 }
 
 
-@media (max-width: 571px ) {
+@media (max-width: 425px ) {
 
     .fa-bars {
         margin-top: -12.5%;
-        margin-left: 78%;
+        margin-left: 80%;
         visibility: visible;
         cursor: pointer;
     }
     
     #mobile-nav {
         margin-top: 1%;
-        margin-left: 70%;
+        margin-left: 65%;
         display: none;
     
     }
@@ -984,22 +1670,29 @@ body {
         position: fixed;
         z-index: 999;
         box-shadow: 0px 20px 49px rgba(0,0,0,0.67);
+        width: 65%;
         top: 4%;
-        padding: 10px;
+        /* padding: px; */
         padding-right: 0px;
-        left: 8%;
-        right: 8%;
+        left: 5%;
+        right: 3%;
         gap: 2%;
     }
+
+    /* .title {
+        margin-top: 35%;
+    } */
 
     .nav img {
         width: 15%;
         margin-top: -2%;
     }
 
+
+
     .background img {
-        width: 93%;
-        height: 100%;
+        width: 107.5%;
+        height: 220%;
         /* object-fit: cover;
         object-position: bottom; */
         position: absolute;
@@ -1011,92 +1704,99 @@ body {
         margin-top: 50%;
     }
 
-.main-text {
-    color: white;
-    font-size: 3.5rem;
-    margin-left: 17%;
-    font-weight: 400;
-}
-
+    .main-text {
+        color: rgb(0, 140, 255);
+        font-size: 3.5rem;
+        margin-left: 8%;
+        font-weight: 700;
+    }
+    
     .home-view {
-        margin-left: 0%;
+        margin-left: 3%;
         display: block;
     }
-
+    
     .slide-view  {
-        margin-top: 8%;
+        margin-top: 4%;
         background-color: black;
-        padding: 20px;
+        padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
-        max-width: 90%;
+        width: 100%;
     }
-
+    
     .home-view :hover {
         background-color: rgb(49, 49, 49);
     }
-
-    .fa-globe, .fa-book, .fa-user, .fa-pencil-square-o, .fa-list-ol, .fa-group, .fa-graduation-cap {
+    
+    .fa-globe, .fa-book, .fa-user, .fa-pencil-square-o, .fa-list-ol, .fa-group, .fa-graduation-cap, .fa-user-plus, .fa-hotel, .fa-building, .fa-trophy {
         color: rgb(82, 155, 250);
     }
-
-
+    
+    
     .courses {
-        margin-top: 27%;
+        margin-top: 60%;
+        margin-bottom: 10%;
+        display: block;
+        margin-left: 1%;
+        /* margin-right: 26%; */
+    }
+    
+    .pop-course {
+        display: block;
+        margin-left: 2%;
         margin-bottom: 10%;
         
+    
     }
-
-    .pop-course {
-        margin-left: 0%;
-        display: block;
-    }
-/* 
+    
     .pop-course :hover {
-        margin-top: 0%;
-    } */
-
-    .pop-course img {
-        margin-top: 40%;
-        width: 205%;
+        margin-top: 0%
     }
-
+    
+    .pop-course img {
+        display: block;
+        margin-top: 30%;
+        width: 100%;
+    }
+    
     .pop-course-info {
         margin-top: 0;
-        width: 205%;
+        width: 100%;
         height: 40%;
         padding:15px;
         background: lavender;
         
     }
-
+    
     .price-tag {
         background-color: rgb(8, 180, 180);
         padding: 3px;
         padding-left: 11px;
-        width: 205%;
+        width: 100%;
         color: aliceblue;
     }
-
+    
     .wide-screen {
-        margin-top: 58%;
+        margin-top: 50%;
         display: block;
         gap: 0%;
     }
-
+    
     .large-text {
         font-size: 2.8rem;
         width: 90%;
     }
-
+    
     .register {
         background-color: cornflowerblue;
         padding: 30px;
         padding-top: 50px;
         padding-bottom: 50px;
+        margin-left: 2%;
         width: 100%;
     }
-
+    
     .register-button {
         margin-top: 10%;
         padding: 15px;
@@ -1106,15 +1806,14 @@ body {
         color: white;
         border-style: none;
         border-radius: 0px;
-    
+       
     }
-
-
-
-
+    
     .background101 img {
-        width: 100%;
-        height: 74.5%;
+        margin-left: 8%;
+        margin-right: 1%;
+        width: 90%;
+        height: 66.6%;
         object-fit: cover;
         object-position: bottom;
         position: absolute;
@@ -1122,43 +1821,580 @@ body {
         opacity: 0.6;
         
     }
-
+    
     .search-course form h2 {
         width: 120%;
     }
     .search-course form {
         margin-top: 30%;
-        margin-left: 2%;
+        margin-left: 20%;
     }
-
+    
     .course-input {
         padding: 20px;
         padding-top: 24px;
         padding-bottom: 24px;
-        width: 90%;
+        width: 70%;
         margin-top: 8%;
         margin-bottom: 2%;
         border-radius: 0px;
         
     }
-
+    
     .search-course-button {
         padding: 10px;
         padding-left: 25px;
         padding-right: 25px;
-        width: 90%;
+        width: 70%;
         margin-top: 10%;
     }
+    
+    .school-info {
+        margin-top: 40%;
+        margin-bottom: 8%;
+        display: block;
+        gap: 0%;
+        margin-left: 5%;
+    }
+    
+    .info_side-board img {
+        width: 80%;
+        height: 59%;
+        object-fit: cover;
+        object-position: bottom;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+        
+    }
+    
+    .mini-nav-bar {
+        display: flex;
+        gap: 3%;
+    }
+    
+    .info-board {
+        background-color: cyan;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    .stats-board {
+        margin-top: 60%;
+    }
 
+    .stats-board .row {
+        display: block;
+    }
+    
+    .background808 img {
+        width: 106.2%;
+        height: 160%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        filter: brightness(20%);
+    
+    }
+    
+    .stats {
+        margin-top: 18%;
+        margin-left: 35%;
+    }
+    
+    /* .stats-board h1 {
+        margin-left: 80%;
+    } */
+    
     .services {
-        margin-top: 20%;
+        margin-top: 70%;
+        
+    }
+    .services .row {
+        display: block;
+        margin-right: 20%;
     }
 
     .service {
-       
         padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+    
+    /* .footer {
+        margin-top: 28%;
+        right: 0;
+        left: 0;
+        background-color: black;
+        padding: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 104.8%;
+    }
+    
+    .input-group {
+        width: 65%;
+        margin-left: 17%;
+    
+    }
+    
+    .footer-box {
+        margin-top: 18%;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border-top-style:solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        border-color: white;
+    }
+    
+    .footer-box img {
+        width: 22%;
+        border-radius: 200px;
+    }
+    
+    .footer-box li {
+        list-style-type: none;
+    }
+    
+    .footer-box h4 {
+        margin-left: 16.2%;
+    }
+    
+    .footer-box a {
+        color: grey;
+    }
+    
+    .copyright-box {
+        margin-top: 5%;
+        font-size: larger;
+        display: flex;
+        border-top-style:none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        border-color: white;
+    }
+    
+    .s-media {
+        margin-left: 65%;
+    } */
+    
+    /* courses.html */
+    .background03 img {
+        width: 100%;
+        height: 80%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    .display-text {
+        width: 45%;
+        padding: 20px;
+        font-size: 3.6rem;
+        margin-left: 28%;
+    }
+    .academics {
+        margin-top: 60%;
+    }
+    .acad-info {
+        margin-left: 6%;
+    }
+    
+    .acad-info button {
+        margin-top: 3%;
+        margin-left: 34%;
+    }
+    
+    .acad_info {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkslateblue;
+    }
+    
+    .acad_img01 {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    
+    .offered_subjects {
+        margin-top: 11%;
+    }
+    .offered_subjects li {
+        background-color: darkseagreen;
+        margin-bottom: 1%;
+    }
+    .school_subjects {
+        margin-left: 5%;
+        background-color: azure;
+        padding: 10px;
+    }
+    
+    .facilities {
+        margin-top: 18%;
+    }
+    
+    .library {
+        margin-top: 18%;
+    }
+    
+    .library p {
+        margin-left: 18%;
+        width: 65%;
+        margin-top: 2%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .apply_button {
+        margin-left: 40%;
+        margin-top: 12%;
+    }
+    
+    .space_505 {
+        margin-top: 12%;
+    }
+    
+    /* teachers.html */
+    .teachers {
+        margin-top: 57%;
+    }
+    
+    .course-teachers {
+        margin-left: 2%;
+    }
+    
+    .course-teachers :hover {
+       opacity: 0.7;
+    }
+    
+    .course-teachers img {
+        margin-top: 12%;
+        width: 110%;
+    }
+    
+    .course-teachers-info {
+        margin-top: 0;
+        width: 110%;
+        height: 40%;
+        padding:15px;
+        background: lavender;
+        
+    }
+    
+    .curriculum {
+        margin-top: 18%;
+    }
+    
+    .curriculum p {
+        margin-left: 15%;
+    }
+    
+    .teaching {
+        margin-top: 22%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 6%;
+        margin-left: 4%;
+        margin-bottom: 0%;
+    }
+    
+    
+    .teaching_more {
+        margin-top: 10%;
+        padding: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: darkcyan;
+        color: white;
+        border-style: none;
+        border-radius: 0px;
+       
+    }
+    
+    .teaching img {
+        width: 50%;
+        height: 40%;
+    }
+    
+    /* login.html */
+    
+    .background707 img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    .loginCard {
+        margin-top: 25%;
+        margin-left: 27%;
+        background-color: white;
+        padding: 20px;
+        max-width: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .login_input {
+        height: 20%;
+        margin-bottom: 6%;
+        border-radius: 0px;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: solid;
+        outline: none;
+        border-width: 1px;
+        color: #c8cad1;
+        border-color: #c8cad1;
+        font-size: 0.9rem;
+    }
+    
+    .login_button {
+        width: 100%;
+        padding: 15px;
+        border-radius: 0px;
+        margin-top: 8%;
+    }
+    
+    .login_info {
+        margin-top: 8%;
+        color: gray;
+    }
+    
+    /* enrollment.html */
+    
+    .background505 img {
+        width: 100%;
+        height: 360%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    #enrollmentCard {
+        margin-top: 22%;
+        width: 65%;
+        padding: 10px;
+        margin-left: 5%;
+    }
+    
+    .form_enroll-button {
+        margin-top: 10%;
+        padding: 15px;
+        padding-left: 18px;
+        padding-right: 18px;
+        background-color: blue;
+        color: white;
+        border-style: none;
+        border-radius: 0px;
+    }
+    
+    /* contact.html */
+    .message {
+        margin-left: 3%;
+    }
+    
+    .join_courses {
+        margin-left: 4%;
+    }
+    
+    .join_courses p {
+        color: #7a7a80;
+        font-size: 1.1rem;
+        margin-bottom: 10%;
+    }
+    
+    .join_courses li {
+        list-style-type: none;
+    }
+    
+    .join_courses .fa {
+        color: rgb(76, 148, 241);
+    }
+    
+    .send_message {
+        width:100%;
+    }
+    
+    .send_message input, .send_message textarea {
+        background-color: rgb(249, 255, 249);
+        border: none;
+        outline: none;
+    }
+    
+    .send_message_button {
+        margin-top: 2%;
+        padding: 10px;
+        width: 100%;
+    
+    }
+    /* aboutUs.html */
+    .about_us {
+        margin-top: 40%;
+        margin-left: 8%;
+        display: block;
+    
+    }
+    
+    .adjustNav {
+        width: 83%;
+    }
+
+    .about_info {
+        margin-top: 8%;
+        padding: 15px;
+        margin-left: 3%;
+        background-color: lightseagreen;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 95%;
+    }
+    
+    .about_info p {
+        width: 90%;
+        margin-left: 2%;
+    }
+    
+    .about_us p {
+        width: 95%;
+    }
+    
+    .about-profile img {
+        border-radius: 100%;
+        width: 80%;
+        height: 40%;
+        margin-left: 6%;
+    }
+    
+    .principal_info {
+        display: flex;
+        gap: 5%;
+        margin-left: 6%;
+        margin-top: 15%;
+    }
+    
+    .board_members {
+        margin-top: 16%;
+        display: block;
+    }
+    
+    
+    
+    /* profile page */
+    .profile {
+        margin-top:40%;
+        margin-left: 4%;
+    }
+    
+    .profile-card img {
+        border-radius: 200px;
+    }
+    
+    .profile-card {
+        background-color: rgb(255, 255, 255);
+        padding: 8px;
+        padding-left: 200px;
+        border-radius: 5px;
+        /* width: 20%; */
+    }
+    
+    .profile-card h4 {
+        margin-left: 10%;
+    }
+    
+    .profile_input {
+        margin-bottom: 2%;
+        border-radius: 3px;
+    }
+    
+    .profile_info {
+        background-color: rgb(144, 168, 247);
+        border-radius: 5px;
+        padding: 5px;
+        
+    }
+    
+    /* signUp Page */
+    .formTwo {
+        margin-top: 10%;
+        margin-left: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .background909 img {
+        width: 100%;
+        height: 220%;
+        /* object-fit: cover;
+        object-position: bottom; */
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+    
+    /* boarding.html */
+    .boarding {
+        margin-top: 22%;
+        gap: 0%;
+    }
+    
+    .hostel_masters {
+        display: block;
+        gap: 5%;
+        margin-left: 7%;
+    }
+    
+    .hostel_masters img {
+        height: 70%;
+        width: 90%;
+    }
+    
+    .boarding_img01 img {
+        margin-top: 10%;
+        margin-left: 7%;
+    }
+    
+    .hostel-info {
+        margin-top: 12%;
+        margin-left: 4%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .hostel_btn {
+        margin-top: 8%;
+        margin-left: 40%;
+    }
+    
+    /* admission.html */
+    .admission, .tution {
+        margin-top: 22%;
+        margin-left: 2%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    /* gallery.html */
+    .gallery {
+        margin-top: 30%;
+        margin-left: 5%;
+    }
+    
+    .gallery img {
+        width: 100%;
+        margin-bottom: 4%;
     }
 
     .footer {
@@ -1169,7 +2405,7 @@ body {
         padding: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 102%;
+        width: 105.3%;
     }
 
     .input-group {
@@ -1178,6 +2414,7 @@ body {
 
     }
 
+    
     .footer-box {
         margin-top: 18%;
         padding-top: 50px;
@@ -1192,7 +2429,7 @@ body {
     }
 
     .footer-box img {
-        width: 13%;
+        width: 15%;
         border-radius: 200px;
     }
 
@@ -1201,7 +2438,7 @@ body {
     }
 
     .footer-box h4 {
-        margin-left: 8%;
+        margin-left: 28.2%;
     }
 
     .footer-box a {
