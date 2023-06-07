@@ -15,10 +15,10 @@
 <body>
     <div class="container">
         <div class="background505">
-            <img src="img/pexels-pixabay-48148.jpg" alt="">
+            <img src="img/istockphoto-1305347109-612x612.jpg" alt="">
         </div>
         
-        <ul class="nav d-flex ">
+        <ul class="nav adjustNav d-flex ">
            
             <img src="img/education icon.jpg" alt="">
             <h3 class="title mt-2 ml-3 text-info">ACEDU COLLEGE</h3>
@@ -64,7 +64,7 @@
         <form  id="enrollmentCard" class="bg-white was-validated">
             <h1 class="text-center text-info">ENROLLMENT FORM</h1>
     
-            <h4>Ensure you fill in your correct information in the fields below.</h4>
+            <h4>Ensure you fill in the correct information pertaining to your ward in the fields below.</h4>
             <div class=" form-group">
                 <h5 class="text-primary">Basic Information</h5>
                 <div class="form-group">
@@ -100,34 +100,70 @@
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <h5 class="text-primary">Contact Information</h5>
             <div class="form-group">
+                <label for="cert">NIN Passport/ Birth Certificate</label>
+                <input id="cert" class="form-control" type="file" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please attach a file.</div>
+            </div>
+            <div class="form-group">
+                <label for="photo">Most Recent passport photographs (Not more than 6 months)</label>
+                <input id="photo" class="form-control" type="file" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please attach a file.</div>
+            </div>
+            <div class="form-group">
+                <label for="testimonial">Character Testimonial from current school</label>
+                <input id="testimonial" class="form-control" type="file" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please attach a file.</div>
+            </div>
+            <div class="form-group">
+                <label for="report">Academic Reports of last two years from current school</label>
+                <input id="report" class="form-control" type="file" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please attach a file.</div>
+            </div>
+            <h5 class="text-primary">Parent/Guardian Information</h5>
+            <div class="form-group">
+                <div class="form-group">
+                    <label for="f-name">Parent/ Guardian First Name</label>
+                    <input id="f-name" class="form-control" type="text" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="l-name">Last Name</label>
+                    <input id="l-name" class="form-control" type="text" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
                 <label for="tel-number">Mobile Number</label>
                 <input id="tel-number" class="form-control" type="tel" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="form-group">
-                <label for="r-adress">Residential Adress</label>
+                <label for="r-adress">Residential Address</label>
                 <input id="r-adress" class="form-control" type="text" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="form-group">
-                <label for="email">Email Adress</label>
+                <label for="email">Email Address</label>
                 <input id="email" class="form-control" type="email" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
-            <h5 class="text-primary">Course Information</h5>
             <div class="form-group">
-                <label for="student-no">Student Number (Username)</label>
+                <label for="student-no">School Website Username</label>
                 <input id="student-no" class="form-control" type="text" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
+            <h5 class="text-primary">Enrollment Information</h5>
             <div class="form-group">
-                <label for="study" class="form-label">Select your class entry</label>
+                <label for="study" class="form-label">Select class entry</label>
                 <select name="" id="study" class="form-control" required>
                     <option value="">Please Select</option>
                     <option value="1st">JSS1</option>
@@ -140,7 +176,7 @@
              
             </div>
             <div class="form-group">
-                Are You on a Scholarship?
+                Is your ward on a Scholarship?
                 <label for="yes">Yes</label>
                 <input type="radio"  name="s-status" value="yes" required>
              
@@ -148,13 +184,26 @@
                 <input type="radio" name="s-status"  value="no"required >
             </div>
 
-            <button type="submit" class="btn btn-outline-dark register-button">Print Form</button>
-            <a href="index02.html"><button class="form_enroll-button btn btn-primary">Submit</button></a> 
+            <div class="form-group">
+               <a href="https://www.paypal.com/ng/home"><button class="btn btn-outline-secondary ">Pay #15,000</button></a>
+               <p>This amount is non-refundable</p>
+            </div>
+
+            <button  class="btn btn-outline-dark register-button print-button">Print Form</button>
+            <a href="index02.html"><button class="form_enroll-button btn btn-primary submit_button" type="submit">Submit</button></a> 
         
 
         </form>
 
-        <div class="footer">
+        <div class="response_card p-5 bg-light">
+            <h3 class="text-center text-success">You have succesfully uploaded your ward's information on the admission portal</h3>
+            <h6 class="mt-5">You will receive an email informing you if your ward was selected for the Entrance Examination.</h6>
+            <hr>
+            <p class="text-center">For Enquiries, please call <a href="#">+234565778777889</a></p>
+
+        </div>
+
+        <!-- <div class="footer">
             
             <div class="subscription">
                 <hr class="w-25">
@@ -224,8 +273,8 @@
                     <a href="mailto:tofunmikusimo@outlook.com"><i class="fa fa-envelope-o  fa-fw" aria-hidden="true"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+
     </div>
 </body>
 </html>
