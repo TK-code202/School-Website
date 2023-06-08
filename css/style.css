@@ -839,7 +839,7 @@ body {
         position: fixed;
         z-index: 999;
         box-shadow: 0px 20px 49px rgba(0,0,0,0.67);
-        width: 67%;
+        width:90%;
         top: 4%;
         /* padding: px; */
         padding-right: 0px;
@@ -860,7 +860,7 @@ body {
 
 
     .background img {
-        width: 100.5%;
+        width: 143.6%;
         height: 180%;
         /* object-fit: cover;
         object-position: bottom; */
@@ -870,7 +870,7 @@ body {
     }
     
     .showcase {
-        margin-top: 50%;
+        margin-top: 60%;
     }
 
     .main-text {
@@ -891,7 +891,7 @@ body {
         padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
-        width: 200%;
+        width: 240%;
     }
     
     .home-view :hover {
@@ -904,7 +904,7 @@ body {
     
     
     .courses {
-        margin-top: 60%;
+        margin-top: 120%;
         margin-bottom: 10%;
         display: block;
         margin-left: 1%;
@@ -1057,7 +1057,7 @@ body {
     }
     
     .background808 img {
-        width: 100.2%;
+        width: 143.2%;
         height: 160%;
         /* object-fit: cover;
         object-position: bottom; */
@@ -1069,7 +1069,7 @@ body {
     
     .stats {
         margin-top: 18%;
-        margin-left: 35%;
+        margin-left: 65%;
     }
     
     /* .stats-board h1 {
@@ -1574,7 +1574,7 @@ body {
         padding: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 105.3%;
+        width: 145%;
     }
 
     .input-group {
