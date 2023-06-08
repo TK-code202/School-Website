@@ -1670,7 +1670,7 @@ body {
         position: fixed;
         z-index: 999;
         box-shadow: 0px 20px 49px rgba(0,0,0,0.67);
-        width: 65%;
+        /* width: 70%; */
         top: 4%;
         /* padding: px; */
         padding-right: 0px;
@@ -1691,7 +1691,7 @@ body {
 
 
     .background img {
-        width: 107.5%;
+        width: 155.5%;
         height: 220%;
         /* object-fit: cover;
         object-position: bottom; */
@@ -1722,7 +1722,7 @@ body {
         padding: 25px;
         padding-top: 60px;
         padding-bottom: 60px;
-        width: 100%;
+        width: 120%;
     }
     
     .home-view :hover {
@@ -1735,7 +1735,7 @@ body {
     
     
     .courses {
-        margin-top: 60%;
+        margin-top: 90%;
         margin-bottom: 10%;
         display: block;
         margin-left: 1%;
@@ -1745,7 +1745,7 @@ body {
     .pop-course {
         display: block;
         margin-left: 2%;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
         
     
     }
@@ -1888,7 +1888,7 @@ body {
     }
     
     .background808 img {
-        width: 106.2%;
+        width: 155.6%;
         height: 160%;
         /* object-fit: cover;
         object-position: bottom; */
@@ -1900,7 +1900,7 @@ body {
     
     .stats {
         margin-top: 18%;
-        margin-left: 35%;
+        margin-left: 50%;
     }
     
     /* .stats-board h1 {
@@ -1921,6 +1921,7 @@ body {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
     
     /* .footer {
         margin-top: 28%;
@@ -1988,7 +1989,7 @@ body {
     
     /* courses.html */
     .background03 img {
-        width: 100%;
+        width: 159.3%;
         height: 80%;
         /* object-fit: cover;
         object-position: bottom; */
@@ -1998,13 +1999,13 @@ body {
     }
     
     .display-text {
-        width: 45%;
+        width: 73%;
         padding: 20px;
         font-size: 3.6rem;
-        margin-left: 28%;
+        margin-left: 30%;
     }
     .academics {
-        margin-top: 60%;
+        margin-top: 90%;
     }
     .acad-info {
         margin-left: 6%;
@@ -2023,7 +2024,7 @@ body {
     
     .acad_img01 {
         margin-top: 10%;
-        margin-left: 10%;
+        margin-left: 6%;
     }
     
     .offered_subjects {
@@ -2048,7 +2049,7 @@ body {
     }
     
     .library p {
-        margin-left: 18%;
+        margin-left: 40%;
         width: 65%;
         margin-top: 2%;
         font-family: 'Times New Roman', Times, serif;
@@ -2205,6 +2206,11 @@ body {
     }
     
     /* contact.html */
+
+    .contact_content {
+        display: block;
+    }
+
     .message {
         margin-left: 3%;
     }
@@ -2245,20 +2251,20 @@ body {
     }
     /* aboutUs.html */
     .about_us {
-        margin-top: 40%;
+        margin-top: 80%;
         margin-left: 8%;
         display: block;
     
     }
     
-    .adjustNav {
+    /* .adjustNav {
         width: 83%;
-    }
+    } */
 
     .about_info {
         margin-top: 8%;
         padding: 15px;
-        margin-left: 3%;
+        margin-left: 20%;
         background-color: lightseagreen;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         width: 95%;
@@ -2347,14 +2353,19 @@ body {
     
     /* boarding.html */
     .boarding {
-        margin-top: 22%;
+        margin-top: 60%;
         gap: 0%;
     }
     
     .hostel_masters {
         display: block;
-        gap: 5%;
         margin-left: 7%;
+    }
+
+    .hostel_masters p {
+        margin-top: 10%;
+        margin-left: 15%;
+        margin-bottom: 10%;
     }
     
     .hostel_masters img {
@@ -2369,18 +2380,18 @@ body {
     
     .hostel-info {
         margin-top: 12%;
-        margin-left: 4%;
+        margin-left: 25%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     
     .hostel_btn {
         margin-top: 8%;
-        margin-left: 40%;
+        margin-left: 60%;
     }
     
     /* admission.html */
     .admission, .tution {
-        margin-top: 22%;
+        margin-top: 82%;
         margin-left: 2%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
@@ -2388,13 +2399,13 @@ body {
     
     /* gallery.html */
     .gallery {
-        margin-top: 30%;
+        margin-top: 80%;
         margin-left: 5%;
     }
     
     .gallery img {
         width: 100%;
-        margin-bottom: 4%;
+        margin-bottom: 15%;
     }
 
     .footer {
@@ -2405,7 +2416,7 @@ body {
         padding: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
-        width: 105.3%;
+        width: 155.5%;
     }
 
     .input-group {
